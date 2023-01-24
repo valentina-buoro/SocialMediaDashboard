@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Box,
+  Container,
   Card,
   CardContent,
   Stack,
@@ -13,8 +14,10 @@ import { bigTeenz1 } from "../data/BottomCardData";
 const TopCard = (props) => {
   
   return (
-    
-        <Box>
+   
+        <Box sx={{ position:'absolute',
+        top:{xs:'75px', sm:'150px'}}}>
+          <Container >
           <Stack
             direction={{ xs: "column", sm: "row" }}
             spacing={{ xs: 1, sm: 2, md: 4 }}
@@ -73,6 +76,7 @@ const TopCard = (props) => {
               );
             })}
           </Stack>
+          </Container>
         
     </Box>
   );
